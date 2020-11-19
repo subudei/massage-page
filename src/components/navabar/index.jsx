@@ -4,17 +4,12 @@ import "./style.css"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { FaBars, FaTimes } from "react-icons/fa"
-import { gsap } from "gsap"
 
 function Navbar({ siteTitle }) {
   const [click, setClick] = useState(false)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
-  gsap.from(".active", {
-    x: "-100%",
-    duration: 0.5,
-  })
 
   return (
     <>
@@ -29,7 +24,7 @@ function Navbar({ siteTitle }) {
             <FaBars className="menu-btn" />
           )}
         </div>
-        <ul className={click ? "nav-menu" : "nav-menu active"}>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
