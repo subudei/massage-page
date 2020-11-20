@@ -1,5 +1,6 @@
 .navbar {
-  background: rgb(110, 69, 100);
+  /* background: rgb(177, 98, 166); */
+  background-color: transparent;
   height: 5rem;
   width: 100vw;
   display: flex;

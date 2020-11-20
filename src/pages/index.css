@@ -1,10 +1,37 @@
-.home-container {
-  background-color: rgb(20, 20, 20);
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+
+.backgroundImage {
   display: flex;
+  width: 100vw;
+  margin-top: -5rem;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  top: 5rem;
-  height: calc(100vh - 5rem);
-  overflow: auto;
+  background-repeat: no-repeat;
+}
+.cover-overlay {
+  display: -webkit-flex;
+  display: flex;
+  background-color: rgba(163, 36, 136, 0.192);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  margin: auto;
+  text-align: center;
+}
+.falling-txt {
+  font-size: 8rem;
+  font-family: "Merienda One", cursive;
+  color: rgb(255, 255, 255);
+}
+.fadeing-txt {
+  font-size: 2.5rem;
+  font-family: "Merienda One", cursive;
+  color: rgb(124, 12, 124);
+  letter-spacing: 5px;
 }
