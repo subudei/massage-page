@@ -17,7 +17,7 @@ function Navbar({ siteTitle }) {
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           {siteTitle}
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
+        <div role="presentation" className="menu-icon" onClick={handleClick}>
           {click ? (
             <FaTimes className="menu-btn" />
           ) : (

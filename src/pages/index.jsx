@@ -10,15 +10,29 @@ import BackgroundImage from "gatsby-background-image"
 import SEO from "../components/seo"
 
 function IndexPage(props) {
+  let animation = () => {
+    localStorage.setItem("show_animation", 0)
+  }
+  const showAnimation = localStorage.getItem("show_animation")
+  console.log(showAnimation)
   useEffect(() => {
-    gsap.from(".falling-txt", {
-      duration: 2,
-      y: -200,
-      opacity: 0,
-      ease: "power2.out",
-    })
-    gsap.from(".fadeing-txt", { delay: 1, duration: 1.5, opacity: 0 })
+    console.log("renderrrr")
+    console.log(showAnimation)
+    if (showAnimation === 0) {
+      gsap.from(".falling-txt", {
+        duration: 2,
+        y: -200,
+        opacity: 0,
+        ease: "power2.out",
+      })
+      gsap.from(".fadeing-txt", { delay: 1, duration: 1.5, opacity: 0 })
+    }
+
+    return () => {
+      localStorage.setItem("show_animation", 1)
+    }
   }, [])
+  console.log(showAnimation)
 
   return (
     <Layout>

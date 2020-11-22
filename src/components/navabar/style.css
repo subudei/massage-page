@@ -25,6 +25,7 @@
 
 .nav-menu {
   display: grid;
+  background-color: transparent;
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   list-style: none;
@@ -94,11 +95,12 @@
   }
 
   .menu-icon {
+    border: none;
+    background-color: transparent;
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-
     transform: translate(-100%, 60%);
     font-size: 2rem;
     cursor: pointer;

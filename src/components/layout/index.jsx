@@ -6,7 +6,7 @@ import Navbar from "../navabar/index"
 
 import "./style.css"
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
