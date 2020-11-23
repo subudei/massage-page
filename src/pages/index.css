@@ -34,4 +34,9 @@
   font-family: "Merienda One", cursive;
   color: rgb(124, 12, 124);
   letter-spacing: 5px;
-}
+} /*
+@media screen and (max-width: 960px) {
+  .backgroundImage {
+    display: none;
+  }
+}*/
