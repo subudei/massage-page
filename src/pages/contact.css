@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+
 .background-image {
   display: flex;
   width: 100vw;
@@ -10,19 +12,23 @@
   background-repeat: no-repeat;
 }
 .contact-container {
-  background-color: rgba(1, 1, 1, 0.2);
+  /* background-color: rgba(1, 1, 1, 0.2); */
   display: grid;
   width: 80%;
   margin-top: 5rem;
-  height: 80%;
+  height: 90%;
   margin: auto;
 }
 .welcome-note {
-  background-color: rgba(1, 1, 1, 0.2);
+  /* background-color: rgba(1, 1, 1, 0.2); */
   display: grid;
   padding-top: 5rem;
   place-items: center;
   text-align: center;
+}
+.welcome-text {
+  font-family: "Merienda One", cursive;
+  text-shadow: 0px 3px 0px rgb(185, 170, 184);
 }
 .logo {
   display: flex;

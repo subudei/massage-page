@@ -48,7 +48,7 @@ export const pageQuery = graphql`
   query {
     indexImage: file(relativePath: { eq: "massage-lady.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1800) {
+        fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
         }
       }

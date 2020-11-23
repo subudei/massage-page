@@ -23,8 +23,8 @@ function Contact(props) {
       >
         <div className="contact-container">
           <div className="welcome-note">
-            <h2 className="welcome-header">Dobrodošli</h2>
-            <h2 className="welcome-mesage">
+            <h1 className="welcome-text">Dobrodošli</h1>
+            <h2 className="welcome-text">
               Oslobodite se stresa i napetosti. Zakažite masažu.
             </h2>
 
