@@ -13,12 +13,13 @@ function IndexPage(props) {
   useEffect(() => {
     if (window.sessionStorage.getItem("firstLoad") === null) {
       gsap.from(".falling-txt", {
+        delay: 1.5,
         duration: 2,
         y: -200,
         opacity: 0,
         ease: "power2.out",
       })
-      gsap.from(".fadeing-txt", { delay: 1, duration: 1.5, opacity: 0 })
+      gsap.from(".fadeing-txt", { delay: 3, duration: 1.5, opacity: 0 })
       window.sessionStorage.setItem("firstLoad", 1)
     }
   }, [])

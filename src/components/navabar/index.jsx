@@ -7,13 +7,21 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 function Navbar({ siteTitle }) {
   const [click, setClick] = useState(false)
+  const [navbar, setNavbar] = useState(false)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
+  const handleNav = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true)
+    } else setNavbar(false)
+  }
+
+  window.addEventListener("scroll", handleNav)
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={navbar ? "navbar color" : "navbar"}>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           {siteTitle}
         </Link>
@@ -31,8 +39,8 @@ function Navbar({ siteTitle }) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              About
+            <Link to="/massage" className="nav-links" onClick={closeMobileMenu}>
+              Massage
             </Link>
           </li>
           <li className="nav-item">

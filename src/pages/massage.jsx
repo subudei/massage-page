@@ -1,25 +1,41 @@
 import React from "react"
-import "./about.css"
+import "./massage.css"
 
-//import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+//import scrollTo from "gatsby-plugin-smoothscroll"
 
-function About() {
+function Massage() {
   return (
     <Layout>
       <SEO title="About" />
       <div className="about-container">
+        <div className="massage-list-container">
+          <h1 className="massage-list-title">Masaze u ponudi</h1>
+        </div>
         <div className="massage-list">
           <ul>
-            <li>masaza</li>
-            <li>masaza</li>
-            <li>masaza</li>
-            <li>masaza</li>
+            <li>
+              <Link to="/#first">masaza1</Link>
+            </li>
+            <li>
+              <a href="#second">masaza2</a>
+            </li>
+            <li>
+              <Link to="third" smooth={true} duration={800}>
+                masaza3
+              </Link>
+            </li>
+            <li>
+              <Link to="fourth" smooth={true} duration={1000}>
+                masaza4
+              </Link>
+            </li>
           </ul>
         </div>
-        <div className="massage-card">
-          <h3 className="massage-title">masaza</h3>
+        <div id="first" className="massage-card">
+          <h3 className="massage-title">masaza1</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Praesentium aspernatur voluptatem provident facilis officia atque a,
@@ -27,8 +43,8 @@ function About() {
             omnis voluptatibus.
           </p>
         </div>
-        <div className="massage-card">
-          <h3 className="massage-title">masaza</h3>
+        <div id="second" className="massage-card">
+          <h3 className="massage-title">masaza2</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Praesentium aspernatur voluptatem provident facilis officia atque a,
@@ -36,8 +52,8 @@ function About() {
             omnis voluptatibus.
           </p>
         </div>
-        <div className="massage-card">
-          <h3 className="massage-title">masaza</h3>
+        <div id="third" className="massage-card">
+          <h3 className="massage-title">masaza3</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Praesentium aspernatur voluptatem provident facilis officia atque a,
@@ -45,8 +61,8 @@ function About() {
             omnis voluptatibus.
           </p>
         </div>
-        <div className="massage-card">
-          <h3 className="massage-title">masaza</h3>
+        <div id="fourth" className="massage-card">
+          <h3 className="massage-title">masaza4</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Praesentium aspernatur voluptatem provident facilis officia atque a,
@@ -58,4 +74,4 @@ function About() {
     </Layout>
   )
 }
-export default About
+export default Massage

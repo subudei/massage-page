@@ -8,3 +8,12 @@
   justify-content: center;
   background-repeat: no-repeat;
 }
+
+.massage-card {
+  background-color: rgb(178, 236, 238);
+  display: flex;
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+  margin-bottom: 10rem;
+}
