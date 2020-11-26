@@ -16,7 +16,7 @@
   z-index: 2;
 }
 .navbar.color {
-  background-color: rgb(110, 69, 100);
+  background-color: rgb(196, 74, 226);
 }
 
 .navbar-logo {
@@ -68,7 +68,7 @@
 }
 
 .nav-links:hover {
-  color: rgb(196, 74, 226);
+  /* color: rgb(196, 74, 226); */
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
@@ -96,7 +96,7 @@
   }
 
   .nav-menu.active {
-    background: rgb(110, 69, 100);
+    background: rgb(196, 74, 226);
     top: 0;
     opacity: 1;
     padding-top: 5rem;
@@ -148,7 +148,10 @@
 
   .nav-links-mobile:hover {
     background: #fff;
-    color: #242424;
+    color: #2b0227;
     transition: 250ms;
+  }
+  .nav-item {
+    font-size: 1.2rem;
   }
 }

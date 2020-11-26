@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
 }
 .contact-container {
-  /* background-color: rgba(1, 1, 1, 0.2); */
+  color: rgb(10, 54, 54);
   display: grid;
   width: 80%;
   margin-top: 5rem;
@@ -20,7 +20,7 @@
   margin: auto;
 }
 .welcome-note {
-  /* background-color: rgba(1, 1, 1, 0.2); */
+  background-color: rgba(1, 1, 1, 0.2);
   display: grid;
   padding-top: 5rem;
   place-items: center;
@@ -28,20 +28,33 @@
 }
 .welcome-text {
   font-family: "Merienda One", cursive;
-  text-shadow: 0px 3px 0px rgb(185, 170, 184);
 }
 .logo {
   display: flex;
   align-items: center;
+  color: rgb(196, 74, 226);
 }
 .icon {
   font-size: 1.5rem;
   margin-right: 1.5rem;
-  color: black;
+  color: rgb(196, 74, 226);
 }
-.text {
+.text-contact {
   font-size: 1.2rem;
   margin-bottom: 0;
+  color: rgb(196, 74, 226);
+}
+.time-table {
+  background-color: rgba(1, 1, 1, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  line-height: 150%;
+}
+.time-text {
 }
 .social-network {
   display: flex;
@@ -50,4 +63,10 @@
 }
 .icon.soc {
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 960px) {
+  .background-image {
+    /* display: none; */
+  }
 }

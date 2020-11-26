@@ -23,19 +23,25 @@ function Contact(props) {
       >
         <div className="contact-container">
           <div className="welcome-note">
-            <h1 className="welcome-text">Dobrodošli</h1>
+            <h1 className="welcome-text">Dobrodošli u Relax Room</h1>
             <h2 className="welcome-text">
               Oslobodite se stresa i napetosti. Zakažite masažu.
             </h2>
 
             <div className="logo ">
               <FaPhoneAlt className="icon" />
-              <p className="text">+381 060 XXXXXXXXX</p>
+              <p className="text-contact">+381 060 XXXXXXXXX</p>
             </div>
             <div className="logo">
               <FaHome className="icon" />
-              <p className="text">Obilićeva 94, Kruševac</p>
+              <p className="text-contact">Obilićeva 94, Kruševac</p>
             </div>
+          </div>
+          <div className="time-table">
+            <h3 className="time-text">Radno Vreme</h3>
+            <p>Ponedeljak - Petak : 11-21h</p>
+            <p>Subota - Nedelja : 16-21h</p>
+            <h5>Zakazivanje je obavezno</h5>
           </div>
           <div className="social-network">
             <a href="https://sr-rs.facebook.com/" target="blank">

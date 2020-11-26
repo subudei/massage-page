@@ -4,10 +4,11 @@ import "./style.css"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { FaBars, FaTimes } from "react-icons/fa"
+// import gsap from "gsap/gsap-core"
 
-function Navbar({ siteTitle }) {
+function Navbar() {
   const [click, setClick] = useState(false)
-  const [navbar, setNavbar] = useState(false)
+  // const [navbar, setNavbar] = useState(false)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
@@ -18,10 +19,19 @@ function Navbar({ siteTitle }) {
   }
 
   window.addEventListener("scroll", navColor)
-  console.log(navbar)*/
+  console.log(navbar)
+  const navTL = gsap.timeline({ defaults: { ease: "power1.out" } })
+  useEffect(() => {
+    navTL.to(".navbar", {
+      delay: 0.25,
+      backgroundColor: "rgb(196, 74, 226)",
+      duration: 0.1,
+    })
+  }, [])*/
+
   return (
     <>
-      <nav className={navbar ? "navbar color" : "navbar"}>
+      <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <h3 className="logo-bottom">Relax</h3>
           <h5 className="logo-top">Massage Room</h5>
@@ -36,17 +46,17 @@ function Navbar({ siteTitle }) {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Home
+              Naslovna
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/massage" className="nav-links" onClick={closeMobileMenu}>
-              Massage
+              Masaže
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-              Contact
+              Kontakt
             </Link>
           </li>
         </ul>

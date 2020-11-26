@@ -10,19 +10,41 @@ import BackgroundImage from "gatsby-background-image"
 import SEO from "../components/seo"
 
 function IndexPage(props) {
-  useEffect(() => {
-    gsap.from(".btn-contact", { delay: 3, duration: 1, opacity: 0 })
-    if (window.sessionStorage.getItem("firstLoad") === null) {
-      gsap.from(".falling-txt", {
-        delay: 1.5,
-        duration: 2,
-        y: -200,
-        opacity: 0,
-        ease: "power2.out",
-      })
-      gsap.from(".fadeing-txt", { delay: 3, duration: 1.5, opacity: 0 })
+  const tl = gsap.timeline({ defaults: { ease: "power1.out" } })
 
+  useEffect(() => {
+    if (window.sessionStorage.getItem("firstLoad") === null) {
+      tl.to(".intro", { display: "flex" })
+      tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 })
+      tl.to(".intro", { y: "-100%", delay: 1, duration: 1 })
+      tl.from(".falling-txt", { y: 30, duration: 0.5, opacity: 0 })
+      tl.from(".fadeing-txt", {
+        y: 30,
+        duration: 0.5,
+        stagger: 0.25,
+        opacity: 0,
+      })
+      tl.from(".btn-contact", {
+        y: 30,
+        duration: 0.5,
+        stagger: 0.25,
+        opacity: 0,
+      })
       window.sessionStorage.setItem("firstLoad", 1)
+    } else {
+      tl.from(".falling-txt", { y: 30, duration: 0.5, opacity: 0 })
+      tl.from(".fadeing-txt", {
+        y: 30,
+        duration: 0.5,
+        stagger: 0.25,
+        opacity: 0,
+      })
+      tl.from(".btn-contact", {
+        y: 30,
+        duration: 0.5,
+        stagger: 0.25,
+        opacity: 0,
+      })
     }
   }, [])
 
@@ -48,6 +70,19 @@ function IndexPage(props) {
             </div>
           </div>
         </BackgroundImage>
+        <div className="intro">
+          <div className="intro-text">
+            <h1 className="hide">
+              <span className="text">Opušta Telo</span>
+            </h1>
+            <h1 className="hide">
+              <span className="text">Otklanja Stres</span>
+            </h1>
+            <h1 className="hide">
+              <span className="text">Pospešuje San</span>
+            </h1>
+          </div>
+        </div>
       </div>
     </Layout>
   )
