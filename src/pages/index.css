@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 .backgroundImage {
-  display: flex;
   width: 100vw;
   margin-top: -5rem;
   height: 100vh;
@@ -14,7 +14,7 @@
 .cover-overlay {
   display: -webkit-flex;
   display: flex;
-  background-color: rgba(163, 36, 136, 0.192);
+  flex-direction: column;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -23,21 +23,42 @@
 .text {
   margin: auto;
   text-align: center;
+  color: #fff;
 }
 .falling-txt {
-  font-size: clamp(2rem, 4rem, 8rem);
+  font-size: clamp(1rem, 3rem, 6rem);
   letter-spacing: 0.4rem;
-  font-family: "Merienda One", cursive;
-  color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
 }
 .fadeing-txt {
-  font-size: clamp(1rem, 1.8rem, 2.5rem);
-  font-family: "Merienda One", cursive;
-  color: rgb(124, 12, 124);
+  font-size: clamp(0.8rem, 1.5rem, 2.5rem);
   letter-spacing: 5px;
-} /*
-@media screen and (max-width: 960px) {
-  .backgroundImage {
-    display: none;
-  }
-}*/
+  font-family: "Quicksand", sans-serif;
+}
+.btn-div {
+  padding-top: 4rem;
+  margin: auto;
+}
+.btn-contact {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: rgb(196, 74, 226);
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px;
+}
+
+.btn-contact:hover {
+  color: rgb(196, 74, 226);
+  background: #fff;
+}
+.btn-contact:active {
+  position: relative;
+  top: 1px;
+}

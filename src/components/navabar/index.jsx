@@ -11,19 +11,20 @@ function Navbar({ siteTitle }) {
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
-  const handleNav = () => {
+  /*const navColor = () => {
     if (window.scrollY >= 80) {
       setNavbar(true)
     } else setNavbar(false)
   }
 
-  window.addEventListener("scroll", handleNav)
-
+  window.addEventListener("scroll", navColor)
+  console.log(navbar)*/
   return (
     <>
       <nav className={navbar ? "navbar color" : "navbar"}>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          {siteTitle}
+          <h3 className="logo-bottom">Relax</h3>
+          <h5 className="logo-top">Massage Room</h5>
         </Link>
         <div role="presentation" className="menu-icon" onClick={handleClick}>
           {click ? (
