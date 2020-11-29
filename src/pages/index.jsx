@@ -46,7 +46,7 @@ function IndexPage(props) {
         opacity: 0,
       })
     }
-  }, [])
+  })
 
   return (
     <Layout>

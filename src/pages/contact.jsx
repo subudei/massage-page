@@ -17,17 +17,25 @@ function Contact(props) {
   return (
     <Layout>
       <SEO title="contact" />
-      <BackgroundImage
-        className="background-image"
-        fluid={props.data.indexImage.childImageSharp.fluid}
-      >
-        <div className="contact-container">
-          <div className="welcome-note">
-            <h1 className="welcome-text">Dobrodošli u Relax Room</h1>
-            <h2 className="welcome-text">
-              Oslobodite se stresa i napetosti. Zakažite masažu.
-            </h2>
-
+      <div className="contact-container">
+        <BackgroundImage
+          className="background-image"
+          fluid={props.data.indexImage.childImageSharp.fluid}
+        >
+          <div className="background-image-overlay">
+            <div className="contact-div">
+              <div className="welcome-note">
+                <h1 className="welcome-text">Dobrodošli u Relax Room</h1>
+                <h2 className="welcome-text">
+                  Oslobodite se stresa i napetosti. Zakažite masažu.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </BackgroundImage>
+        <div className="info-container">
+          <div className="adress-container">
+            <h3>Kontakti</h3>
             <div className="logo ">
               <FaPhoneAlt className="icon" />
               <p className="text-contact">+381 060 XXXXXXXXX</p>
@@ -37,13 +45,15 @@ function Contact(props) {
               <p className="text-contact">Obilićeva 94, Kruševac</p>
             </div>
           </div>
-          <div className="time-table">
+
+          <div className="adress-container">
             <h3 className="time-text">Radno Vreme</h3>
             <p>Ponedeljak - Petak : 11-21h</p>
             <p>Subota - Nedelja : 16-21h</p>
-            <h5>Zakazivanje je obavezno</h5>
+            <h4>Zakazivanje je obavezno</h4>
           </div>
-          <div className="social-network">
+          <div className="adress-container">
+            <h3>Socijalne Mreze</h3>
             <a href="https://sr-rs.facebook.com/" target="blank">
               <FaFacebookSquare className="icon soc" />
             </a>
@@ -52,7 +62,7 @@ function Contact(props) {
             </a>
           </div>
         </div>
-      </BackgroundImage>
+      </div>
     </Layout>
   )
 }
@@ -61,7 +71,7 @@ export default Contact
 
 export const pageQuery = graphql`
   query {
-    indexImage: file(relativePath: { eq: "flower.jpg" }) {
+    indexImage: file(relativePath: { eq: "contact-massage.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid

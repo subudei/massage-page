@@ -4,14 +4,14 @@
 
 .navbar {
   /* background-color: transparent; */
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
   height: 5rem;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 2;
 }
