@@ -35,31 +35,35 @@ function Contact(props) {
         </BackgroundImage>
         <div className="info-container">
           <div className="adress-container">
-            <h3>Kontakti</h3>
-            <div className="logo ">
-              <FaPhoneAlt className="icon" />
-              <p className="text-contact">+381 060 XXXXXXXXX</p>
-            </div>
+            <h3 className="h-text">Radno Vreme</h3>
+            <p className="text-contact">Ponedeljak - Petak : 11-21h</p>
+            <p className="text-contact">Subota - Nedelja : 16-21h</p>
+            <h4 className="h-text">Zakazivanje je obavezno</h4>
+          </div>
+          <div className="adress-container">
+            <h3 className="h-text">Kontakti</h3>
             <div className="logo">
               <FaHome className="icon" />
               <p className="text-contact">Obilićeva 94, Kruševac</p>
             </div>
+            <div className="logo ">
+              <FaPhoneAlt className="icon" />
+              <p className="text-contact">
+                +381 060 XXXXXXXXX (Viber, WhatsApp)
+              </p>
+            </div>
           </div>
 
           <div className="adress-container">
-            <h3 className="time-text">Radno Vreme</h3>
-            <p>Ponedeljak - Petak : 11-21h</p>
-            <p>Subota - Nedelja : 16-21h</p>
-            <h4>Zakazivanje je obavezno</h4>
-          </div>
-          <div className="adress-container">
-            <h3>Socijalne Mreze</h3>
-            <a href="https://sr-rs.facebook.com/" target="blank">
-              <FaFacebookSquare className="icon soc" />
-            </a>
-            <a href="https://www.instagram.com/?hl=sr" target="blank">
-              <FaInstagramSquare className="icon soc" />
-            </a>
+            <h3 className="h-text">Socijalne Mreže</h3>
+            <div className="soc-logo">
+              <a href="https://sr-rs.facebook.com/" target="blank">
+                <FaFacebookSquare className="icon soc" />
+              </a>
+              <a href="https://www.instagram.com/?hl=sr" target="blank">
+                <FaInstagramSquare className="icon soc" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
