@@ -3,7 +3,7 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
@@ -11,7 +11,7 @@
 
 .background-image {
   display: flex;
-  width: 100vw;
+  width: 100%;
   margin-top: -5rem;
   height: 65vh;
   align-items: center;
@@ -38,27 +38,38 @@
 }
 .welcome-note {
   display: grid;
-  padding-top: 6rem;
   place-items: center;
   text-align: center;
 }
 .welcome-text {
   font-family: "Quicksand", sans-serif;
   color: #fff;
+  font-size: clamp(0.8rem, 2.5rem, 3.5rem);
+  opacity: 1;
 }
+.masage-text {
+  width: 80%;
+  display: flex;
+  margin: 3rem auto;
+  text-align: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(0.5rem, 1rem, 2.5rem);
+  line-height: 300%;
+  opacity: 1;
+}
+
 .info-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 8rem;
+  margin-top: 5rem;
   width: 70vw;
   align-items: center;
   justify-content: space-between;
-  font-family: "Quicksand", sans-serif;
 }
 .adress-container {
-  /* border: solid black 1px; */
-  min-width: 300px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,15 +87,15 @@
 .icon {
   font-size: 1rem;
   margin-right: 1.5rem;
-  /* color: rgb(196, 74, 226); */
 }
 .h-text {
   font-family: "Quicksand", sans-serif;
+  color: rgb(35, 35, 35);
+  margin: auto;
 }
 .text-contact {
   font-size: 1rem;
   margin-bottom: 0;
-  /* color: black; */
   font-family: "Quicksand", sans-serif;
 }
 .soc-logo {
@@ -93,4 +104,5 @@
 }
 .icon.soc {
   font-size: 1.8rem;
+  margin: auto 0.5rem;
 }

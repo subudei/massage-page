@@ -6,7 +6,7 @@
   /* background-color: transparent; */
   /* background-color: rgba(0, 0, 0, 0.2); */
   height: 5rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

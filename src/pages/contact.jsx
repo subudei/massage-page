@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./contact.css"
 //import { Link } from "gatsby"
+import { gsap } from "gsap"
 import { graphql } from "gatsby"
 import {
   FaHome,
@@ -14,6 +15,16 @@ import SEO from "../components/seo"
 import BackgroundImage from "gatsby-background-image"
 
 function Contact(props) {
+  const tlContact = gsap.timeline({ defaults: { ease: "power1.out" } })
+  useEffect(() => {
+    tlContact.from(".welcome-text", { y: 30, duration: 0.5, opacity: 0 })
+    tlContact.from(".masage-text", {
+      y: 30,
+      duration: 0.5,
+      opacity: 0,
+      stagger: 0.25,
+    })
+  })
   return (
     <Layout>
       <SEO title="contact" />
@@ -26,13 +37,16 @@ function Contact(props) {
             <div className="contact-div">
               <div className="welcome-note">
                 <h1 className="welcome-text">Dobrodošli u Relax Room</h1>
-                <h2 className="welcome-text">
-                  Oslobodite se stresa i napetosti. Zakažite masažu.
-                </h2>
               </div>
             </div>
           </div>
         </BackgroundImage>
+        <div className="masage-text">
+          <h2 className="h-text">
+            Oslobodite se stresa i napetosti.
+            <br /> Zakažite masažu.
+          </h2>
+        </div>
         <div className="info-container">
           <div className="adress-container">
             <h3 className="h-text">Radno Vreme</h3>
@@ -49,7 +63,8 @@ function Contact(props) {
             <div className="logo ">
               <FaPhoneAlt className="icon" />
               <p className="text-contact">
-                +381 060 XXXXXXXXX (Viber, WhatsApp)
+                +381 060 XXXXXXXXX <br />
+                (Viber, WhatsApp)
               </p>
             </div>
           </div>

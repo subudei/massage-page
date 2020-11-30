@@ -1,16 +1,25 @@
 import React from "react"
 import "./massage.css"
 
+import { graphql } from "gatsby"
 import { Link } from "react-scroll"
+
+import Logo from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 //import scrollTo from "gatsby-plugin-smoothscroll"
 
-function Massage() {
+function Massage({ data }) {
   return (
     <Layout>
       <SEO title="About" />
       <div className="about-container">
+        <Logo
+          fluid={data.massageGrafic.childImageSharp.fluid}
+          alt="logo"
+          className="logo-massage"
+        />
         <div className="massage-list-container">
           <h1 className="massage-list-title">Masaze u ponudi</h1>
         </div>
@@ -75,3 +84,15 @@ function Massage() {
   )
 }
 export default Massage
+
+export const query = graphql`
+  query {
+    massageGrafic: file(relativePath: { eq: "massage-gr.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
