@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+
 .massage-container {
   display: flex;
   flex-direction: column;
@@ -52,7 +54,46 @@
   color: rgb(35, 35, 35);
   margin: auto;
 }
+.massage-list {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 8rem;
+}
+.links-menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.massage-link {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  font-size: 1.2rem;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.massage-link p {
+  font-family: "Quicksand", sans-serif;
+}
+.massage-link :hover {
+  /* border-bottom: 4px solid rgb(196, 74, 226); 
+   transform: scale(1.15);
+  font-size: 1.25rem; */
+  transition: all 0.2s ease-out;
+}
 
+@media screen and (max-width: 960px) {
+  .links-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
 /* .massage-card {
   background-color: rgb(178, 236, 238);
   display: flex;

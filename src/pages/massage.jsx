@@ -23,78 +23,87 @@ function Massage({ data }) {
         >
           <div className="massage-title-div">
             <h1 className="massage-title-text">
-              Opustite se uz neku od nasih masaza
+              Opustite se uz neku od naših masaža
             </h1>
           </div>
         </BackgroundImage>
         <div className="massage-list-container">
-          <h2 className="massage-list-title">Masaze u ponudi</h2>
+          <h2 className="massage-list-title">Masaže u ponudi</h2>
         </div>
       </div>
       <div className="massage-list">
-        <ul>
-          <li>
-            <Link to="/#first">masaza1</Link>
-          </li>
-          <li>
-            <a href="#second">masaza2</a>
-          </li>
-          <li>
-            <Link to="third" smooth={true} duration={800}>
-              masaza3
+        <ul className="links-menu">
+          <li className="massage-link">
+            <Link to="first" smooth={true} duration={800}>
+              <p>Terapeutska masaža</p>
             </Link>
           </li>
-          <li>
-            <Link to="fourth" smooth={true} duration={1000}>
-              masaza4
+          <li className="massage-link">
+            <Link to="second" smooth={true} duration={1000}>
+              <p>Relax masaža</p>
+            </Link>
+          </li>
+          <li className="massage-link">
+            <Link to="third" smooth={true} duration={1200}>
+              <p>Anticelulit masaža</p>
+            </Link>
+          </li>
+          <li className="massage-link">
+            <Link to="fourth" smooth={true} duration={1400}>
+              <p>Maderoterapija</p>
             </Link>
           </li>
         </ul>
       </div>
       <div>
-        <Logo
-          fluid={data.massageGrafic.childImageSharp.fluid}
-          alt="logo"
-          className="logo-massage"
-        />
-
         <div id="first" className="massage-card">
-          <h3 className="massage-title">masaza1</h3>
+          <h3 className="massage-title">Terapeutska masaža</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium aspernatur voluptatem provident facilis officia atque a,
-            voluptate consectetur rem explicabo nostrum debitis dignissimos
-            omnis voluptatibus.
+            Klasična ili Terapeutska masaža se primenjuje lokalno, i deluje na
+            mestu neposredne primene. Cilj je negovanje tela i jačanje imuniteta
+            organizma. Primenjuje se kao prevencija za otklanjane umora,
+            opštanje mišića i otklanjanje stresa i bola.
           </p>
         </div>
         <div id="second" className="massage-card">
-          <h3 className="massage-title">masaza2</h3>
+          <h3 className="massage-title">Relax masaža</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium aspernatur voluptatem provident facilis officia atque a,
-            voluptate consectetur rem explicabo nostrum debitis dignissimos
-            omnis voluptatibus.
+            Relax je blaga, prijatna, manuelna masaža. Njen jedini cilj je
+            potpuno opuštanje organizma. Izvodi se uz tihu , prijatnu muziku i u
+            adekvatnom prostoru.
           </p>
         </div>
         <div id="third" className="massage-card">
-          <h3 className="massage-title">masaza3</h3>
+          <h3 className="massage-title">Anticelulit masaža</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium aspernatur voluptatem provident facilis officia atque a,
-            voluptate consectetur rem explicabo nostrum debitis dignissimos
-            omnis voluptatibus.
+            Anticelulit masaža ima jednu od najznačajnijih uloga u
+            odstranjivanju celulita. Ona mora biti umerena, dozirana i
+            prilagođena svakom klijentu. Izvodi se određenom vrstom pokreta i
+            pritiska. Anticelulit masaža opušta telo, pojačava cirkulaciju
+            krvotoka, razbija gromuljice masti i svih štetnih sastojaka i
+            doprinosi njihovom lakšem ispiranju i odnošenju.
           </p>
         </div>
         <div id="fourth" className="massage-card">
-          <h3 className="massage-title">masaza4</h3>
+          <h3 className="massage-title">Maderoterapija</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium aspernatur voluptatem provident facilis officia atque a,
-            voluptate consectetur rem explicabo nostrum debitis dignissimos
-            omnis voluptatibus.
+            Maderoterapija je tehnika dubinske masaže, izvodi se uz pomoć
+            anatomski oblikovanih drvenih oklagija, koje omogućuju primenu
+            pritiska na određenim regijama koje obuhvataju mišiće, masnoću i
+            celulit podstičući limfni sistem. Telo ae oslobađa toksina, ubrzava
+            se metabolizam koji zapravo i eliminiše oslobođene toksine iz
+            organizma. Maderoterapiju najčešće koriste žene kako bi se rešile
+            celulita, ali i pored toga ona utiče na opđte stanje organizma.
+            Opušta mišiće i zglobove, podstiče krvotok i limfotok, podstiče
+            izbacivanje vode iz organizma i eliminiše napetost.
           </p>
         </div>
       </div>
+      {/* <Logo
+          fluid={data.massageGrafic.childImageSharp.fluid}
+          alt="logo"
+          className="logo-massage"
+        /> */}
     </Layout>
   )
 }
