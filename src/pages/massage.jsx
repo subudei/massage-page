@@ -1,17 +1,34 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./massage.css"
 
 import { graphql } from "gatsby"
 import { Link } from "react-scroll"
+import { gsap } from "gsap"
 
 import BackgroundImage from "gatsby-background-image"
-import Logo from "gatsby-image"
+// import Logo from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 //import scrollTo from "gatsby-plugin-smoothscroll"
 
 function Massage({ data }) {
+  const tlMassage = gsap.timeline({ defaults: { ease: "power1.out" } })
+  useEffect(() => {
+    tlMassage.from(".massage-title-text", { y: 30, duration: 0.5, opacity: 0 })
+    tlMassage.from(".massage-list-title", {
+      y: 30,
+      duration: 0.5,
+      opacity: 0,
+      stagger: 0.25,
+    })
+    tlMassage.from(".massage-list", {
+      y: 30,
+      duration: 0.5,
+      opacity: 0,
+      stagger: 0.25,
+    })
+  })
   return (
     <Layout>
       <SEO title="About" />
@@ -55,7 +72,7 @@ function Massage({ data }) {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="cards-container">
         <div id="first" className="massage-card">
           <h3 className="massage-title">Terapeutska masaža</h3>
           <p>

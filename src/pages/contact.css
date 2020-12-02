@@ -43,16 +43,19 @@
   font-family: "Quicksand", sans-serif;
   color: #fff;
   font-size: clamp(0.8rem, 2.5rem, 3.5rem);
+  letter-spacing: 3px;
   opacity: 1;
 }
 .masage-text {
   width: 80%;
   display: flex;
   margin: 3rem auto;
+  color: rgb(35, 35, 35);
   text-align: center;
   align-items: center;
   font-family: "Quicksand", sans-serif;
   font-size: clamp(0.5rem, 1rem, 2.5rem);
+  letter-spacing: 2px;
   line-height: 300%;
   opacity: 1;
 }
@@ -75,7 +78,7 @@
   margin: auto;
   padding-bottom: 2rem;
   margin-top: 0;
-  line-height: 200%;
+  line-height: 250%;
 }
 .logo {
   display: flex;
@@ -88,6 +91,7 @@
 }
 .h-text {
   font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
   color: rgb(35, 35, 35);
   margin: auto;
 }

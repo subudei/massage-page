@@ -19,6 +19,7 @@
   place-items: center;
   text-align: center;
   font-family: "Quicksand", sans-serif;
+  letter-spacing: 3px;
   color: #fff;
   font-size: clamp(0.8rem, 2.5rem, 3.5rem);
   opacity: 1;
@@ -45,6 +46,7 @@
   text-align: center;
   align-items: center;
   font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
   font-size: clamp(0.5rem, 1rem, 2.5rem);
   line-height: 300%;
   opacity: 1;
@@ -59,6 +61,7 @@
   width: 60%;
   margin: auto;
   margin-bottom: 8rem;
+  opacity: 1;
 }
 .links-menu {
   width: 100%;
@@ -78,12 +81,26 @@
 }
 .massage-link p {
   font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
 }
 .massage-link :hover {
   /* border-bottom: 4px solid rgb(196, 74, 226); 
    transform: scale(1.15);
   font-size: 1.25rem; */
   transition: all 0.2s ease-out;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2rem;
+  width: 75%;
+  margin: auto;
+}
+.massage-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  width: 75%;
+  margin: auto;
 }
 
 @media screen and (max-width: 960px) {
@@ -95,10 +112,5 @@
   }
 }
 /* .massage-card {
-  background-color: rgb(178, 236, 238);
-  display: flex;
-  width: 90vw;
-  height: 100vh;
-  margin: auto;
-  margin-bottom: 10rem;
+  
 } */
