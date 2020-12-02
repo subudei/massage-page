@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Massage Studio`,
-    description: `Nevena Relax Massage Studio`,
-    author: `@subudei`,
+    description: `Masaza Krusevac`,
+    url: `https://masazakrusevac.com`,
+    author: `Subudei`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

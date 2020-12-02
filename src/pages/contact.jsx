@@ -63,7 +63,7 @@ function Contact(props) {
             <div className="logo ">
               <FaPhoneAlt className="icon" />
               <p className="text-contact">
-                +381 060 XXXXXXXXX <br />
+                +381 064 912 7335 <br />
                 (Viber, WhatsApp)
               </p>
             </div>

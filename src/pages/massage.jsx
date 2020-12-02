@@ -4,6 +4,7 @@ import "./massage.css"
 import { graphql } from "gatsby"
 import { Link } from "react-scroll"
 import { gsap } from "gsap"
+import { Link as LinkTo } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
 // import Logo from "gatsby-image"
@@ -75,7 +76,7 @@ function Massage({ data }) {
       <div className="cards-container">
         <div id="first" className="massage-card">
           <h3 className="massage-title">Terapeutska masaža</h3>
-          <p>
+          <p className="massage-text">
             Klasična ili Terapeutska masaža se primenjuje lokalno, i deluje na
             mestu neposredne primene. Cilj je negovanje tela i jačanje imuniteta
             organizma. Primenjuje se kao prevencija za otklanjane umora,
@@ -84,7 +85,7 @@ function Massage({ data }) {
         </div>
         <div id="second" className="massage-card">
           <h3 className="massage-title">Relax masaža</h3>
-          <p>
+          <p className="massage-text">
             Relax je blaga, prijatna, manuelna masaža. Njen jedini cilj je
             potpuno opuštanje organizma. Izvodi se uz tihu , prijatnu muziku i u
             adekvatnom prostoru.
@@ -92,7 +93,7 @@ function Massage({ data }) {
         </div>
         <div id="third" className="massage-card">
           <h3 className="massage-title">Anticelulit masaža</h3>
-          <p>
+          <p className="massage-text">
             Anticelulit masaža ima jednu od najznačajnijih uloga u
             odstranjivanju celulita. Ona mora biti umerena, dozirana i
             prilagođena svakom klijentu. Izvodi se određenom vrstom pokreta i
@@ -103,7 +104,7 @@ function Massage({ data }) {
         </div>
         <div id="fourth" className="massage-card">
           <h3 className="massage-title">Maderoterapija</h3>
-          <p>
+          <p className="massage-text">
             Maderoterapija je tehnika dubinske masaže, izvodi se uz pomoć
             anatomski oblikovanih drvenih oklagija, koje omogućuju primenu
             pritiska na određenim regijama koje obuhvataju mišiće, masnoću i
@@ -114,6 +115,13 @@ function Massage({ data }) {
             Opušta mišiće i zglobove, podstiče krvotok i limfotok, podstiče
             izbacivanje vode iz organizma i eliminiše napetost.
           </p>
+        </div>
+        <div className="btn-div2">
+          <LinkTo to="/contact">
+            <button type="button" className="btn-contact2">
+              zakažite tretman
+            </button>
+          </LinkTo>
         </div>
       </div>
       {/* <Logo
