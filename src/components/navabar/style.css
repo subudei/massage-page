@@ -70,7 +70,6 @@
 }
 
 .nav-links:hover {
-  /* color: rgb(196, 74, 226); */
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
@@ -98,7 +97,6 @@
   }
 
   .nav-menu.active {
-    /* background: rgb(196, 74, 226); */
     background: rgb(48, 48, 48);
     top: 0;
     opacity: 1;
@@ -115,8 +113,6 @@
   }
 
   .nav-links:hover {
-    /*background-color: #fff;*/
-    /* color: #242424; */
     color: rgb(196, 74, 226);
     border-radius: 0;
     border: none;

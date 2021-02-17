@@ -7,11 +7,9 @@ import { gsap } from "gsap"
 import { Link as LinkTo } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
-// import Logo from "gatsby-image"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-//import scrollTo from "gatsby-plugin-smoothscroll"
 
 function Massage({ data }) {
   const tlMassage = gsap.timeline({ defaults: { ease: "power1.out" } })
@@ -32,7 +30,7 @@ function Massage({ data }) {
   })
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="masaze" />
       <div className="massage-container">
         <BackgroundImage
           fluid={data.indexImage.childImageSharp.fluid}

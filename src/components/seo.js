@@ -11,7 +11,12 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            keywords
+            siteUrl
+            author {
+              name
+              summary
+            }
           }
         }
       }
@@ -19,7 +24,6 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
 
   return (
     <Helmet
@@ -27,15 +31,23 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
+          name: "keywords",
+          content: site.siteMetadata.keywords,
+        },
+        {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:locale`,
+          content: lang,
         },
         {
           property: `og:description`,
@@ -45,29 +57,15 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
       ].concat(meta)}
-    />
+    >
+      <link rel="canonical" href={site.siteMetadata.siteUrl} />
+    </Helmet>
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `sr_RS`,
   meta: [],
   description: ``,
 }
