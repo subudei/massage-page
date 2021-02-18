@@ -75,7 +75,10 @@ function Contact(props) {
               <a href="https://sr-rs.facebook.com/" target="blank">
                 <FaFacebookSquare className="icon soc" />
               </a>
-              <a href="https://www.instagram.com/?hl=sr" target="blank">
+              <a
+                href="https://www.instagram.com/masaza.nevena/?hl=sr"
+                target="blank"
+              >
                 <FaInstagramSquare className="icon soc" />
               </a>
             </div>
