@@ -1,44 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
-
 .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 5rem;
 }
 
 .background-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-top: -5rem;
   height: 65vh;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-repeat: no-repeat;
 }
+
 .background-image-overlay {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: rgba(0, 0, 0, 0.2);
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .contact-div {
+  display: -ms-grid;
   display: grid;
   width: 80%;
   margin-top: 5rem;
   height: 100%;
 }
+
 .welcome-note {
+  display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
 }
+
 .welcome-text {
   font-family: "Quicksand", sans-serif;
   color: #fff;
@@ -46,13 +74,18 @@
   letter-spacing: 3px;
   opacity: 1;
 }
+
 .masage-text {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 3rem auto;
-  color: rgb(35, 35, 35);
+  color: #232323;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Quicksand", sans-serif;
   font-size: clamp(0.5rem, 1rem, 2.5rem);
   letter-spacing: 2px;
@@ -61,50 +94,81 @@
 }
 
 .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 5rem;
   width: 70vw;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .adress-container {
   min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   margin: auto;
   padding-bottom: 2rem;
   margin-top: 0;
   line-height: 250%;
 }
+
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.8rem 0;
 }
+
 .icon {
   font-size: 1rem;
   margin-right: 1.5rem;
 }
+
 .h-text {
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
-  color: rgb(35, 35, 35);
+  color: #232323;
   margin: auto;
 }
+
 .text-contact {
   font-size: 1rem;
   margin-bottom: 0;
   font-family: "Quicksand", sans-serif;
 }
+
 .soc-logo {
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .icon.soc {
   font-size: 1.8rem;
   margin: auto 0.5rem;
 }
+/*# sourceMappingURL=contact.css.map */

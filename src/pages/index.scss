@@ -1,62 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
 .backgroundImage {
   width: 100vw;
   margin-top: -5rem;
   height: 100vh;
   background-size: cover;
   background-position: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
 }
-
 .cover-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .text {
   margin: auto;
   text-align: center;
   color: #fff;
 }
-
 .falling-txt {
   font-size: clamp(1rem, 2.5rem, 6rem);
   letter-spacing: 0.4rem;
   font-family: "Quicksand", sans-serif;
 }
-
 .fadeing-txt {
   font-size: clamp(0.8rem, 1.5rem, 2.5rem);
   letter-spacing: 5px;
   font-family: "Quicksand", sans-serif;
 }
-
 .btn-div {
   padding-top: 4rem;
   margin: auto;
 }
-
 .btn-contact {
   display: inline-block;
   cursor: pointer;
@@ -67,23 +50,22 @@
   padding: 0.8rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  background: #c44ae2;
+  background: rgb(196, 74, 226);
   border: none;
   border-radius: 0px;
-  -webkit-box-shadow: 0px;
-          box-shadow: 0px;
+  box-shadow: 0px;
   opacity: 1;
 }
 
 .btn-contact:hover {
-  color: #c44ae2;
+  color: rgb(196, 74, 226);
   background: #fff;
 }
-
 /* .btn-contact:active {
   position: relative;
   top: 1px;
 } */
+
 .intro {
   background: black;
   position: fixed;
@@ -93,29 +75,20 @@
   height: 100%;
   z-index: 3;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .intro-text {
-  color: #e3f2ff;
+  color: rgb(227, 242, 255);
   font-family: "Heebo", sans-serif;
   font-size: 2.5rem;
 }
-
 .hide {
-  background: black;
+  background: rgb(0, 0, 0);
   overflow: hidden;
 }
-
 .hide span {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   display: inline-block;
   font-size: 3rem;
 }
-/*# sourceMappingURL=index.css.map */

@@ -1,23 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
-.massage-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 
+.massage-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .massage-title-div {
-  display: -ms-grid;
   display: grid;
   width: 80%;
   margin-top: 5rem;
@@ -25,7 +15,6 @@
 }
 
 .massage-title-text {
-  display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
@@ -37,140 +26,102 @@
 }
 
 .massage-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-top: -5rem;
   height: 65vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
 }
-
 .logo-massage {
   max-width: 450px;
   margin: auto;
   background-color: blanchedalmond;
 }
-
 .massage-list-container {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 3rem auto;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 2px;
   font-size: clamp(0.5rem, 1rem, 2.5rem);
   line-height: 300%;
   opacity: 1;
 }
-
 .massage-list-title {
   font-family: "Quicksand", sans-serif;
-  color: #232323;
+  color: rgb(35, 35, 35);
   margin: auto;
 }
-
 .massage-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 60%;
   margin: auto;
   margin-bottom: 8rem;
   opacity: 1;
 }
-
 .links-menu {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .massage-link {
   font-size: 1.2rem;
   height: 2rem;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
   cursor: pointer;
-}
 
-.massage-link:hover {
-  -webkit-text-decoration: underline 0.1rem #c44ae2;
-          text-decoration: underline 0.1rem #c44ae2;
-  color: #c44ae2;
-  -webkit-transition: ease-in-out 0.1s;
-  transition: ease-in-out 0.1s;
+  &:hover {
+    text-decoration: underline 0.1rem rgb(196, 74, 226);
+    color: rgb(196, 74, 226);
+    transition: ease-in-out 0.1s;
+  }
 }
-
 .massage-link p {
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
 }
-
 .massage-link :hover {
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 .cards-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-columns: auto;
   grid-gap: 2rem;
   width: 75%;
   margin: auto;
 }
-
 .massage-card {
-  display: -ms-grid;
   display: grid;
   width: 100%;
   margin: auto;
   padding: 2rem 0.5rem;
   margin-bottom: 5rem;
 }
-
 .massage-title {
   font-size: clamp(0.5rem, 1.5rem, 2rem);
   font-family: "Quicksand", sans-serif;
-  color: #232323;
+  color: rgb(35, 35, 35);
   text-align: center;
   margin-top: 6rem;
   margin-bottom: 2rem;
 }
-
 .massage-text {
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
   line-height: 200%;
   text-align: center;
 }
-
 .btn-div2 {
   margin: auto;
 }
-
 .btn-contact2 {
   display: inline-block;
   cursor: pointer;
@@ -181,37 +132,28 @@
   padding: 0.8rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  background: #c44ae2;
+  background: rgb(196, 74, 226);
   border: 2px solid #fff;
   border-radius: 0px;
   margin-bottom: 5rem;
-  -webkit-box-shadow: 0px;
-          box-shadow: 0px;
+  box-shadow: 0px;
   opacity: 1;
 }
 
 .btn-contact2:hover {
-  color: #c44ae2;
+  color: rgb(196, 74, 226);
   background: #fff;
-  border: 2px solid #c44ae2;
+  border: 2px solid rgb(196, 74, 226);
 }
 
 @media screen and (max-width: 960px) {
   .links-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
   }
   .cards-container {
     width: 90%;
   }
 }
-/*# sourceMappingURL=massage.css.map */
