@@ -21,7 +21,9 @@ function Navbar() {
       setNavbar(true)
     } else setNavbar(false)
   }
-  window.addEventListener("scroll", navColor)
+  if (typeof window !== `undefined`) {
+    window.addEventListener("scroll", navColor)
+  }
 
   return (
     <>
