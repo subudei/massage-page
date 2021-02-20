@@ -76,7 +76,7 @@
   font-size: 1.2rem;
   height: 2rem;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   cursor: pointer;
 
   &:hover {
@@ -89,9 +89,9 @@
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
 }
-.massage-link :hover {
-  transition: all 0.2s ease-out;
-}
+// .massage-link :hover {
+//   transition: all 0.2s ease-out;
+// }
 .cards-container {
   display: grid;
   grid-template-columns: auto;
@@ -153,7 +153,11 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
+    .massage-link {
+      margin-bottom: 3rem;
+    }
   }
+
   .cards-container {
     width: 90%;
   }
